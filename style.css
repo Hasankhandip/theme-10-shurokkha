@@ -1,0 +1,764 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1150px;
+}
+.header-section {
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(185, 185, 185, 0.411);
+}
+.hdr-all {
+  display: flex;
+  align-items: center;
+}
+.web-logo {
+  margin-right: 20px;
+}
+.hdr-all a img {
+  max-width: 100%;
+  height: auto;
+}
+.hdr-navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.hdr-navbar ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.hdr-navbar ul li {
+  list-style: none;
+}
+.hdr-navbar ul li a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(95, 95, 95);
+  font-size: 16px;
+  padding: 30px 7px;
+  font-weight: 400;
+  font-family: "Baloo Da 2", cursive;
+}
+.hdr-navbar ul li a:hover::after {
+  width: 100%;
+}
+.hdr-navbar ul li a::after {
+  content: "";
+  transition: all 0.5s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(9, 39, 83, 0.9);
+  height: 5px;
+  width: 0;
+}
+.actv-nav {
+  padding: 30px 5px !important;
+  color: #213c64 !important;
+  font-weight: 600 !important;
+}
+.actv-nav::after {
+  width: 100% !important;
+}
+.hdr-btn a {
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 12px;
+  font-weight: 500;
+  background: #f26d3e;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.hdr-btn a:hover {
+  background: #ff4300;
+}
+.banner-section {
+  margin-top: 90px;
+  display: block;
+  background-image: url(img/banner-bg.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.banner-item {
+  max-width: 750px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  min-height: 600px;
+}
+.banner-card {
+  position: relative;
+  flex-basis: 55%;
+  flex-grow: 1;
+  height: 100%;
+  margin-right: 10px;
+}
+.banner-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 10px;
+  background: #0a2f8d;
+  border-radius: 5px 5px 0 0;
+}
+.bc-top {
+  display: flex;
+  align-items: center;
+}
+.banner-reg {
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  background: #fff;
+  border-radius: 5px;
+  height: 390px;
+  padding: 27px 20px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-reg:hover {
+  background: #daedff;
+}
+.bc-top h4 {
+  color: #000;
+  margin-left: 15px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.bc-top img {
+  margin: 0 0 0 25px;
+}
+.bc-bottom h6 {
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.banner-card-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 45%;
+  margin-left: 10px;
+}
+.banner-card-2 a {
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.bcl-item {
+  width: 100%;
+  height: 90px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.bcl-item:first-child {
+  margin-top: 0;
+}
+.bcl-item img {
+  margin-right: 36px;
+}
+.bcl-item p {
+  margin-bottom: 0;
+  font-size: 22px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Baloo Da 2", cursive;
+}
+.reg-status {
+  position: relative;
+}
+.reg-status::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 10px;
+  background-color: #0d7b2c;
+  border-radius: 0 5px 5px 0;
+}
+.reg-status:hover {
+  background: #dfffda;
+}
+.card-collect {
+  position: relative;
+}
+.card-collect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 10px;
+  background-color: #d8de00;
+  border-radius: 0 5px 5px 0;
+}
+.card-collect:hover {
+  background: #feffda;
+}
+.card-file {
+  position: relative;
+}
+.card-file::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 10px;
+  background-color: #25be88;
+  border-radius: 0 5px 5px 0;
+}
+.card-file:hover {
+  background: #dafff2;
+}
+.card-ques {
+  position: relative;
+}
+.card-ques::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 10px;
+  background-color: #5fc6cc;
+  border-radius: 0 5px 5px 0;
+}
+.card-ques:hover {
+  background: #dafdff;
+}
+.help-center {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  border-radius: 5px;
+  margin-top: -5vh;
+  z-index: 2;
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 4px hsla(0, 0%, 72.5%, 0.25);
+}
+.help-c-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 1rem 0;
+  border-left: 1px solid #b0b0b0;
+  padding-left: 2.5rem;
+}
+.help-c-item:first-child {
+  border: none;
+  padding-left: 0;
+}
+.help-c-item a {
+  transition: all 0.6s ease-in-out;
+  text-decoration: none;
+}
+.help-img {
+  display: block;
+  margin-bottom: 10px;
+}
+.help-text {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Baloo Da 2", cursive;
+}
+.help-number {
+  display: block;
+  color: #0d7b2c;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.vaccine-procces-section {
+  padding: 80px 0;
+}
+.vp-text {
+  margin-bottom: 50px;
+}
+.vp-text h3 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 500;
+  padding-left: 25px;
+  margin-left: 30px;
+}
+.vp-text h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 7px;
+  background: orangered;
+}
+.vaccine-procces-item {
+  text-align: center;
+}
+.vaccine-procces-item img {
+  margin-bottom: 20px;
+}
+.vaccine-procces-item h6 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.vaccine-procces-item h6 span {
+  font-weight: 700;
+}
+.vaccine-procces-item p {
+  font-size: 14px;
+}
+.app-download-section {
+  padding: 25px 0;
+  margin: 25px 0;
+}
+.app-dwnld {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.app-d {
+  justify-content: start !important;
+}
+.app-dwnld h6 {
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 0;
+}
+.mujib-100-section {
+  padding: 45px 0;
+}
+.mujib-item img {
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+.mujib-item {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.mujib-item h6 a {
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 0;
+}
+.mujib-item h6 a:hover {
+  text-decoration: underline;
+}
+.footer-section {
+  background: #f26d3e;
+  padding: 55px 0 0 0;
+}
+.footer-list ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.footer-list ul li {
+  list-style: none;
+  margin-bottom: 7px;
+}
+.footer-list ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.footer-list ul li a:hover {
+  text-decoration: underline;
+}
+.footer-item p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Baloo Da 2", cursive;
+  margin-bottom: 8px;
+}
+/* registration.html */
+.registration-page {
+  padding: 40px 0 70px 0;
+}
+.covid-reg-form {
+  margin-top: 90px;
+  padding: 55px 0;
+}
+.covid-reg-txt {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.covid-reg-txt h5 {
+  font-size: 22px;
+  color: #000;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 600;
+}
+.covid-reg-img {
+  text-align: center;
+}
+.covid-reg-img img {
+  transform: rotate(15deg);
+}
+.reg-alert-txt p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #000;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 500;
+}
+.reg-alert-section {
+  padding: 42px 0;
+}
+.reg-page-txt {
+  font-size: 17px !important;
+  margin-left: 0 !important;
+  font-weight: 600 !important;
+}
+.reg-txt {
+  margin-bottom: 22px !important;
+}
+.option-manager {
+  margin-bottom: 20px;
+}
+.option-manager:last-child {
+  margin-bottom: 0;
+}
+.option-manager p {
+  font-family: "Baloo Da 2", cursive;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.option-manager input {
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  color: #212529;
+  font-weight: 500;
+  font-family: "Baloo Da 2", cursive;
+  font-size: 17px;
+}
+.option-manager input:focus-visible {
+  outline: none;
+}
+.form-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.birth-date-nid {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: 25px;
+}
+.date-reg p {
+  margin-bottom: 0 !important;
+}
+.form-select {
+  padding: 0.5rem 1.25rem 0.5rem 0.75rem;
+  border: 1px solid #000;
+}
+.captcha-crctn {
+  margin-top: 60px;
+}
+.captcha-item h6 {
+  font-size: 27px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  font-family: "Baloo Da 2", cursive;
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #bec3c9;
+}
+.captcha-item {
+  border: 2px solid #747474;
+  border-radius: 10px;
+}
+.captcha-item p {
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 5px 10px;
+  margin-bottom: 0;
+}
+.captcha-item input {
+  width: 96%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #bec3c9;
+  color: #212529;
+  font-weight: 500;
+  font-family: "Baloo Da 2", cursive;
+  margin: 0 8px 5px 8px;
+}
+.captcha-item input:focus {
+  outline: none;
+  border: 1px solid #bec3c9;
+  box-shadow: none;
+}
+.captcha-btn {
+  margin-top: 25px;
+}
+.captcha-btn a button {
+  width: 100%;
+  padding: 8px;
+  background: #62ad2d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.1s;
+}
+.captcha-btn a button:hover {
+  background: #4d8824;
+}
+.birth-date-pass {
+  display: block;
+  margin-left: 0;
+  height: auto;
+}
+.pass-reg {
+  margin-bottom: 10px !important;
+}
+.reg-pas-country {
+  margin-top: 147px;
+}
+.reg-chec img {
+  width: 100px;
+  transform: rotate(0) !important;
+}
+.reg-stat {
+  background: #dfffda !important;
+}
+.rp-stat {
+  padding: 25px 0 70px 0 !important;
+}
+.card-stat {
+  background: #feffda !important;
+}
+.tika-txt h3 a {
+  color: rgb(255, 72, 60);
+}
+.tika-txt h3 a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 72, 60);
+}
+.tika-txt h3 {
+  padding-left: 20px !important;
+}
+.sanad-stat {
+  background: #dafff2 !important;
+  padding: 43px 0 !important;
+}
+.tika-stat {
+  padding: 42px 0 0 0 !important;
+}
+.tika-alert-txt p {
+  font-weight: 500;
+  font-family: "Baloo Da 2", cursive;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.tika-alert-txt {
+  padding: 40px 0 60px 0;
+}
+.tika-s-crctn {
+  margin-top: 40px !important;
+}
+.tika-captcha {
+  margin-top: 50px;
+}
+.help-img-1 img {
+  width: 150px !important;
+}
+.help-stat {
+  padding: 20px 0 !important;
+  background: #daedff !important;
+}
+.download-section {
+  padding: 100px 0;
+}
+.dwnld-txt {
+  text-align: center;
+}
+.dwnld-txt p {
+  display: inline;
+  margin-bottom: 0;
+  background: #fff3e1;
+  padding: 40px 180px;
+}
+.dwnld-txt p a {
+  color: #000;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.1s;
+}
+.dwnld-txt p a:hover {
+  text-decoration: underline;
+}
+.help-item a {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 190px;
+}
+.help-item:hover {
+  background: #feffda;
+}
+.h-sanad-item:hover {
+  background: #dafff2;
+}
+.card-q-item:hover {
+  background: #dafdff;
+}
+.help-book-item:hover {
+  background: #daedff;
+}
+.help-item a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5%;
+  bottom: 5%;
+  height: 90%;
+  width: 9px;
+  border-radius: 0 5px 5px 0;
+  background: #d8de00;
+}
+.h-img img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+.h-txt p {
+  color: #000;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.h-sanad-item a::before {
+  background: #25be88 !important;
+}
+.card-q-item a::before {
+  background: #5fc6cc !important;
+}
+.help-book-item a::before {
+  background: #00a3ff !important;
+}
+.help-section {
+  padding: 20px 0 60px 0;
+}
+.help-details {
+  margin-top: 20px;
+}
+.ask-img {
+  width: 120px;
+}
+.ask-stat {
+  padding: 35px 0 !important;
+}
+.tika-reg {
+  margin-bottom: 10px !important;
+}
+.ask-item-colapse p {
+  margin-bottom: 0;
+}
+.ask-item-colapse p a {
+  position: relative;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Baloo Da 2", cursive;
+  color: #000;
+  padding-left: 20px;
+}
+.ask-item-colapse p a::before {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+}
+.card-body {
+  font-family: "Baloo Da 2", cursive;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 8px 10px 0 10px;
+}
+.ask-section {
+  padding: 20px 0 70px 0;
+}
+.ask-item-colapse {
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+.mobile-menu-check,
+.mobile-menu {
+  display: none;
+}
+.hdr-btn {
+  margin-left: 30px;
+}
+.footer-copyrigth {
+  padding: 35px 0 15px 0;
+}
+.footer-copyrigth p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "Baloo Da 2", cursive;
+  margin-bottom: 0;
+  text-align: center;
+}

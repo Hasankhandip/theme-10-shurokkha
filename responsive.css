@@ -1,0 +1,444 @@
+@media (max-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1050px;
+  }
+  .covid-reg-txt h5 br {
+    display: none;
+  }
+  .hdr-all a img {
+    max-width: 200px;
+  }
+  .hdr-all {
+    justify-content: end;
+  }
+  .hdr-navbar ul {
+    margin-left: 0;
+  }
+  .hdr-navbar ul li a {
+    font-size: 15px;
+    padding: 31px 5px;
+  }
+  .actv-nav {
+    padding: 31px 6px !important;
+  }
+  .hdr-btn a {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .header-section {
+    padding: 8px 0;
+  }
+  .hdr-btn {
+    margin-left: 15px;
+  }
+  .help-c-item {
+    padding-left: 30px;
+  }
+  .vaccine-procces-section {
+    padding: 30px 0;
+  }
+  .vp-text h3 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 750px;
+  }
+  .hdr-all {
+    justify-content: start;
+  }
+  .hdr-navbar ul li a::after {
+    display: none;
+  }
+  .hdr-navbar ul {
+    display: inline-block;
+  }
+  .hdr-navbar {
+    display: inline-block;
+    position: relative;
+  }
+  .mobile-menu-check,
+  .mobile-menu {
+    display: block;
+  }
+  .hdr-navbar ul {
+    display: inline-block;
+    position: absolute;
+    top: 82px;
+    width: 1000px;
+    background: #fff;
+    left: -510px;
+    padding: 10px 140px 40px 140px;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.3s;
+  }
+  .hdr-navbar .mobile-menu-check:checked ~ ul {
+    height: 423px;
+    visibility: visible;
+    opacity: 100%;
+    transition: all ease 0.4s;
+  }
+  .hdr-btn {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+  .hdr-navbar ul li a {
+    font-size: 17px;
+    padding: 0 10px;
+  }
+  .actv-nav {
+    font-size: 17px;
+    padding: 0 10px !important;
+  }
+  .hdr-navbar ul li {
+    margin-bottom: 12px;
+  }
+  .mobile-menu-check {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 50px;
+    top: 19px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .mobile-menu span i {
+    position: absolute;
+    right: 50px;
+    top: 17px;
+    font-size: 40px;
+    color: #222;
+    pointer-events: none;
+  }
+  .help-c-item {
+    padding-left: 15px;
+  }
+  .help-center {
+    padding: 13px;
+  }
+  .mujib-item img {
+    width: 100%;
+  }
+  .footer-logo img {
+    width: 100%;
+  }
+  .footer-item img {
+    width: 100%;
+  }
+  .birth-date-nid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .birth-date-nid {
+    justify-content: start;
+  }
+  .reg-pas-country {
+    margin-top: 0;
+  }
+  .captcha-crctn {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 650px;
+  }
+  .hdr-navbar ul {
+    padding: 10px 220px 40px 200px;
+  }
+  .banner-item {
+    max-width: 700px;
+    display: inline-block;
+  }
+  .banner-card {
+    margin: 55px 0 30px 0;
+  }
+  .banner-card-2 {
+    margin-left: 0;
+  }
+  .banner-section {
+    text-align: center;
+  }
+  .bc-top h4 {
+    font-size: 23px;
+  }
+  .help-center {
+    display: inline;
+  }
+  .help-section {
+    padding: 40px 0 50px 0;
+  }
+  .help-c-item {
+    border: none;
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+  .help-text {
+    border-bottom: 1px solid #898989;
+  }
+  .help-c-item:last-child {
+    margin-bottom: 20px;
+  }
+  .vp-text h3 {
+    font-size: 25px;
+  }
+  .mujib-item h6 a {
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  .footer-logo img {
+    width: auto;
+  }
+  .footer-item img {
+    width: auto;
+  }
+  .footer-logo {
+    margin-bottom: 25px;
+  }
+  .footer-list {
+    margin-bottom: 25px;
+  }
+  .footer-item {
+    margin-bottom: 25px;
+  }
+  .footer-section {
+    padding: 40px 0 0 0;
+  }
+  .covid-reg-txt h5 {
+    font-size: 20px;
+  }
+  .covid-reg-img {
+    text-align: left;
+  }
+  .form-select {
+    margin-bottom: 22px;
+  }
+  .covid-reg-txt h5 br {
+    display: block;
+  }
+  .dwnld-txt p {
+    padding: 40px 115px;
+  }
+}
+@media (max-width: 576px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 480px;
+  }
+  .covid-reg-txt h5 br {
+    display: none;
+  }
+  .header-section .container .row > * {
+    width: 50%;
+  }
+  .app-download-section .container .row > * {
+    width: 50%;
+  }
+  .covid-reg-form .container .row > * {
+    width: 50%;
+  }
+  .app-dwnld.app-d a img {
+    width: 100%;
+  }
+  .hdr-navbar ul {
+    width: 576px;
+    left: -300px;
+    padding: 10px 100px 40px 80px;
+  }
+  .mobile-menu-check {
+    right: 30px;
+  }
+  .mobile-menu span i {
+    right: 30px;
+  }
+  .bc-top h4 {
+    font-size: 21px;
+  }
+  .vp-text h3 {
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 18px;
+    margin-left: 15px;
+  }
+  .vaccine-procces-item {
+    margin-bottom: 50px;
+    padding: 0 70px;
+  }
+  .mujib-item {
+    margin-bottom: 40px;
+  }
+  .vp-text {
+    margin-bottom: 0;
+  }
+  .covid-reg-txt h5 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .covid-reg-img {
+    text-align: left;
+    margin-left: 30px;
+  }
+  .reg-alert-section {
+    padding: 30px 0;
+  }
+  .footer-section {
+    padding: 40px 0 0 0;
+  }
+  .dwnld-txt p {
+    padding: 33px 40px;
+  }
+  .download-section {
+    padding: 75px 0;
+  }
+  .help-stat {
+    padding: 30px 0 !important;
+  }
+}
+@media (max-width: 400px) {
+  .help-stat {
+    padding: 40px 0 !important;
+  }
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 380px;
+  }
+  .hdr-all a img {
+    max-width: 160px;
+  }
+  .hdr-navbar ul {
+    top: 67px;
+    width: 400px;
+    left: -212px;
+    padding: 10px 100px 40px 38px;
+  }
+  .web-logo {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+  .mobile-menu span i,
+  .mobile-menu-check {
+    right: 10px;
+    top: 11px;
+  }
+  .banner-section {
+    margin-top: 76px;
+  }
+  .bc-top img {
+    margin: 0;
+  }
+  .bc-bottom img {
+    width: 100%;
+  }
+  .banner-reg {
+    justify-content: space-around;
+  }
+  .vaccine-procces-item {
+    padding: 0 30px;
+  }
+  .app-dwnld h6 {
+    line-height: 22px;
+  }
+  .footer-section {
+    padding: 55px 0 20px 20px;
+  }
+  .covid-reg-form .container .row > * {
+    width: 100%;
+  }
+  .covid-reg-img {
+    text-align: center;
+    margin-left: 0;
+  }
+  .covid-reg-form {
+    padding: 40px 0;
+  }
+  .covid-reg-img {
+    margin-top: 35px;
+  }
+  .footer-section {
+    padding: 55px 0 0 0;
+  }
+  .covid-reg-form {
+    margin-top: 75px;
+  }
+  .tika-txt h3 a {
+    line-height: 27px;
+    font-size: 15px;
+  }
+  .dwnld-txt p {
+    padding: 25px 20px;
+  }
+  .dwnld-txt p a {
+    font-size: 16px;
+  }
+  .ask-img {
+    width: 85px;
+  }
+  .ask-reg-img {
+    margin-top: 20px;
+  }
+  .reg-page-txt {
+    line-height: 26px !important;
+  }
+  .card-body {
+    padding: 20px 10px 0 10px;
+  }
+}
+@media (max-width: 360px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 330px;
+  }
+  .banner-item {
+    max-width: 300px;
+  }
+  .bc-top h4 {
+    font-size: 17px;
+  }
+  .bcl-item p {
+    font-size: 19px;
+  }
+  .vp-text h3 {
+    font-size: 14px;
+    font-weight: 800;
+    padding-left: 18px;
+    margin-left: 10px;
+  }
+  .footer-item img {
+    width: 100%;
+  }
+  .footer-copyrigth p {
+    font-size: 12px;
+  }
+}
